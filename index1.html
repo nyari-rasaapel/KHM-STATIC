@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Company profile - landing page" />
+    <title>Company Profile</title>
+
+    <!-- Google Fonts (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS (hasil compile dari style.css) -->
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <!-- Custom JS -->
+    <script src="./src/js.js" defer></script>
+  </head>
+  <body class="bg-background text-text-primary font-sans antialiased">
+    <!-- ==================== NAVBAR ==================== -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-background/80 backdrop-blur-md border-b border-secondary/20"
+    >
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-primary">Logo</div>
+
+        <!-- Desktop Menu (monitor & tablet) -->
+        <nav class="hidden tablet:flex space-x-6">
+          <a href="#home" class="hover:text-primary transition">Home</a>
+          <a href="#about" class="hover:text-primary transition">Tentang</a>
+          <a href="#services" class="hover:text-primary transition">Layanan</a>
+          <a href="#portfolio" class="hover:text-primary transition">Portfolio</a>
+          <a href="#contact" class="hover:text-primary transition">Kontak</a>
+        </nav>
+
+        <!-- Hamburger Button (handphone) -->
+        <button
+          id="hamburger-btn"
+          class="tablet:hidden w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none"
+        >
+          <span class="hamburger-line w-6 h-0.5 bg-text-primary transition-all duration-300"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-text-primary transition-all duration-300"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-text-primary transition-all duration-300"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <nav
+        id="mobile-menu"
+        class="hidden tablet:hidden bg-background border-t border-secondary/20 shadow-lg"
+      >
+        <div class="flex flex-col py-4">
+          <a href="#home" class="px-4 py-3 hover:bg-primary/10 transition">Home</a>
+          <a href="#about" class="px-4 py-3 hover:bg-primary/10 transition">Tentang</a>
+          <a href="#services" class="px-4 py-3 hover:bg-primary/10 transition">Layanan</a>
+          <a href="#portfolio" class="px-4 py-3 hover:bg-primary/10 transition">Portfolio</a>
+          <a href="#contact" class="px-4 py-3 hover:bg-primary/10 transition">Kontak</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Overlay untuk hamburger (gelapkan background) -->
+    <div id="mobile-overlay" class="hidden fixed inset-0 bg-black/50 z-40 tablet:hidden"></div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="pt-16">
+      <!-- pt-16 untuk menghindari navbar fixed -->
+
+      <!-- Section: Hero (contoh placeholder) -->
+      <section id="home" class="min-h-screen flex items-center py-16">
+        <div class="container mx-auto px-4">
+          <div class="scroll-reveal opacity-0 translate-y-6 transition-all duration-500">
+            <h1 class="text-4xl tablet:text-5xl monitor:text-6xl font-bold mb-4">Hero Section</h1>
+            <p class="text-lg tablet:text-xl mb-6">
+              Ini adalah hero section. Ganti dengan konten Anda.
+            </p>
+            <button
+              class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
+            >
+              CTA Button
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section lain akan ditambahkan di sini -->
+      <!-- About, Services, Portfolio, Testimoni, Kontak, Footer -->
+    </main>
+  </body>
+</html>
