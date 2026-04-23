@@ -1,0 +1,45 @@
+/* Tailwind v4.2 */
+@import 'tailwindcss';
+
+/* Google Fonts sudah di HTML, di sini hanya override font-sans */
+@theme {
+  /* Warna kustom */
+  --color-background: #eef3ed;
+  --color-text-primary: #3c493f;
+  --color-primary: #de9e36; /* tombol utama, link, aksen emas */
+  --color-secondary: #05a8aa; /* tombol sekunder, border */
+  --color-accent: #bc412b; /* error, alert, aksen merah */
+
+  /* Font default */
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+
+  /* Breakpoint kustom (3 jenis) */
+  --breakpoint-tablet: 640px;
+  --breakpoint-monitor: 1024px;
+}
+
+/* Custom variant untuk breakpoint */
+@custom-variant tablet (@media (min-width: 640px));
+@custom-variant monitor (@media (min-width: 1024px));
+
+/* ==================== ANIMASI SCROLL REVEAL ==================== */
+.scroll-reveal {
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ==================== UTILITY TAMBAHAN (opsional) ==================== */
+/* Smooth scroll untuk hash link */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Untuk mobile menu animation (optional) */
+.menu-open {
+  overflow: hidden;
+}
