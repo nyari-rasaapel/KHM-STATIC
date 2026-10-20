@@ -63,8 +63,6 @@ header.floating {
   top: 50px;
   width: 40%;
   margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
   border: 1px solid var(--border);
   border-radius: 14px;
   background: rgba(26, 42, 74, 0.7);
