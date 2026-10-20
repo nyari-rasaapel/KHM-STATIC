@@ -1,157 +1,99 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PT. Kramat Hidro Mandiri - Hydro Turbines Manufacturing & Engineering</title>
-  <meta name="description" content="PT. Kramat Hidro Mandiri - Hydropower, Water Turbines, Machinery, MetalWorks, Steel Structure, Industrial Trading and General Constructions">
+  <title>PT. Kramat Hidro Mandiri</title>
+  <meta name="description" content="Hydropower, Water Turbines, Machinery, MetalWorks, Steel Structure, Industrial Trading and General Constructions">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            surface: '#071325',
-            primary: '#c9a84c',
-            muted: '#94a3b8',
-            tertiary: '#38bdf8',
-          },
-          fontFamily: {
-            heading: ['Playfair Display', 'serif'],
-            body: ['Plus Jakarta Sans', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    :root {
-      --bg: #071325;
-      --surface: #142032;
-      --text: #d7e3fc;
-      --muted: #94a3b8;
-      --border: rgba(255,255,255,0.1);
-    }
-    .glass { background: rgba(26,42,74,0.55); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-surface text-text font-body min-h-screen">
-  <header class="sticky top-0 z-50 glass backdrop-blur-md px-6 py-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-heading">PT. Kramat Hidro Mandiri</h1>
-      <nav class="hidden md:flex gap-6">
-        <a href="index.html" class="hover:text-primary transition">Beranda</a>
-        <a href="layanan.html" class="hover:text-primary transition">Layanan</a>
-        <a href="tentang.html" class="hover:text-primary transition">Tentang</a>
-        <a href="studi-kasus.html" class="hover:text-primary transition">Studi Kasus</a>
-        <a href="kontak.html" class="hover:text-primary transition">Kontak</a>
-      </nav>
-      <a href="kontak.html" class="hidden md:inline-block px-4 py-2 bg-primary text-surface rounded font-semibold">Kontak Kami</a>
+<body>
+
+  <header>
+    <h1 class="font-heading">PT. Kramat Hidro Mandiri</h1>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="studi-kasus.html">Studi Kasus</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="widget" id="theme-widget">
+      <button id="theme-toggle" aria-label="Aktifkan mode terang" title="Mode Gelap">
+        <svg viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm7.5-11.5a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1zm0 11a1 1 0 0 1 1 1v1.5a1 1 0 0 1-2 0V16a1 1 0 0 1 1-1zm-3.9-8.6a1 1 0 0 1 1.4 0l1 1a1 1 0 1 1-1.4 1.4l-1-1a1 1 0 0 1 0-1.4zm7.4 11.6a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4-1.4l1-1a1 1 0 0 1 1.4 0zM4 12a1 1 0 0 1-1 1H1.5a1 1 0 0 1 0-2H3a1 1 0 0 1 1 1zm18 0a1 1 0 0 1-1 1h-1.5a1 1 0 0 1 0-2H21a1 1 0 0 1 1 1zM5.6 5.6a1 1 0 0 1 1.4 0l1 1a1 1 0 0 1-1.4 1.4l-1-1a1 1 0 0 1 0-1.4zm11.4 11.4a1 1 0 0 1 1.4 0l1 1a1 1 0 0 1-1.4 1.4l-1-1a1 1 0 0 1 0-1.4zM18.4 5.6a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4-1.4l1-1a1 1 0 0 1 1.4 0zM7 17a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4-1.4l1-1a1 1 0 0 1 1.4 0z"/></svg>
+      </button>
+      <button id="font-decrease" aria-label="Perkecil font" title="A-">
+        <svg viewBox="0 0 24 24"><path d="M3 13h2v7H3v-7zm4-8h2v4H7V5zm4 12h2v2h-2v-2zm4-16v2h16V3h-2zm0 4h2v12h-2V7zm4 8h2v2h-2v-2zm-8 2v2h2v-2H7v-2zm0 4h2v4H7v-4zm4-8h2v2h-2V5zm4 12h2v2h-2v-2z"/></svg>
+      </button>
+      <span id="font-size-label">A</span>
+      <button id="font-increase" aria-label="Perbesar font" title="A+">
+        <svg viewBox="0 0 24 24"><path d="M3 7h2v7H3V7zm4 4h2v7h-2v-7zm4-8h2v4H7V5zm4 8h2v2h-2v-2zm0-16v2h16V3h-2zm0 4h2v12h-2V7zm4 4h2v2h-2v-2zm4-8h2v2h-2V5zm4 8h2v2h-2v-2z"/></svg>
+      </button>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto">
-    <!-- Hero -->
-    <section class="relative h-[60vh] md:h-[80vh] overflow-hidden">
-      <canvas id="hero-canvas" class="absolute inset-0 w-full h-full"></canvas>
-      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <h2 class="text-3xl md:text-5xl font-heading mb-4">PT. Kramat Hidro Mandiri</h2>
-        <p class="text-lg md:text-xl text-muted max-w-3xl mb-8">Hydropower, Water Turbines, Machinery, Metalworks, Steel Structure, Industrial Trading dan General Constructions.</p>
-        <a href="kontak.html" class="px-8 py-3 bg-primary text-surface rounded-lg font-semibold hover:opacity-90 transition">Hubungi Kami</a>
+  <main>
+    <section class="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-content">
+        <h2 class="hero-title">PT. Kramat Hidro Mandiri</h2>
+        <p class="hero-subtitle">Hydropower, Water Turbines, Machinery, Metalworks, Steel Structure, Industrial Trading and General Constructions.</p>
+        <a href="kontak.html" class="btn-primary">Hubungi Kami</a>
       </div>
     </section>
 
-    <!-- Keunggulan -->
-    <section class="py-16">
-      <h3 class="text-3xl font-heading text-center mb-4">Tentang Kami</h3>
-      <p class="text-muted text-center max-w-2xl mx-auto mb-12">Profesional, relevan, dan siap melayani dengan solusi terbaik untuk kebutuhan hydropower dan konstruksi Anda.</p>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-xl mb-2">Layanan Profesional</h4>
-          <p class="text-muted text-sm">Instalasi Mekanikal Elektrikal untuk Turbin Hidro di seluruh Indonesia.</p>
+    <section>
+      <h2 class="section-title">Tentang Kami</h2>
+      <p class="text-center text-muted max-width-600 mx-auto">Profesional, relevan, dan siap melayani dengan solusi terbaik untuk kebutuhan hydropower dan konstruksi Anda.</p>
+      <div class="grid">
+        <div class="glass">
+          <h3>Layanan Profesional</h3>
+          <p class="text-muted">Instalasi Mekanikal Elektrikal untuk Turbin Hidro di seluruh Indonesia.</p>
         </div>
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-xl mb-2">Selalu Tepat Waktu</h4>
-          <p class="text-muted text-sm">Seluruh kebutuhan teknis dan perkakas selalu diperbarui agar hasil tetap primes.</p>
+        <div class="glass">
+          <h3>Selalu Tepat Waktu</h3>
+          <p class="text-muted">Seluruh kebutuhan teknis dan perkakas selalu diperbarui agar hasil tetap primes.</p>
         </div>
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-xl mb-2">Kerja Tim Solid</h4>
-          <p class="text-muted text-sm">Jasa konsultasi, supervisi, dan analisis dibangun bersama tim berpengalaman.</p>
+        <div class="glass">
+          <h3>Kerja Tim Solid</h3>
+          <p class="text-muted">Jasa konsultasi, supervisi, dan analisis dibangun bersama tim berpengalaman.</p>
         </div>
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-xl mb-2">Dibangun Dengan Dedikasi</h4>
-          <p class="text-muted text-sm">Kami membangun setiap proyek seolah-olah milik kami sendiri — dengan sepenuh hati.</p>
+        <div class="glass">
+          <h3>Dibangun Dengan Dedikasi</h3>
+          <p class="text-muted">Kami membangun setiap proyek seolah-olah milik kami sendiri — dengan sepenuh hati.</p>
         </div>
       </div>
     </section>
 
-    <!-- Portofolio -->
-    <section class="py-16">
-      <h3 class="text-3xl font-heading text-center mb-12">Portofolio</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-lg mb-2">Installation Services</h4>
-          <p class="text-muted text-sm">Instalasi Electrical Mechanical &amp; Ereksi Turbin Hidro.</p>
+    <section>
+      <h2 class="section-title">Portofolio</h2>
+      <div class="grid">
+        <div class="glass">
+          <h3>Installation Services</h3>
+          <p class="text-muted">Instalasi Electrical Mechanical & Ereksi Turbin Hidro.</p>
         </div>
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-lg mb-2">Manufacture Services</h4>
-          <p class="text-muted text-sm">Manufaktur Turbin Hidro — konsultasi &amp; engineering.</p>
+        <div class="glass">
+          <h3>Manufacture Services</h3>
+          <p class="text-muted">Manufaktur Turbin Hidro — konsultasi & engineering.</p>
         </div>
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-lg mb-2">General Machining</h4>
-          <p class="text-muted text-sm">General Machining &amp; Manufacturing untuk berbagai kebutuhan industri.</p>
+        <div class="glass">
+          <h3>General Machining</h3>
+          <p class="text-muted">General Machining & Manufacturing untuk kebutuhan industri.</p>
         </div>
-        <div class="glass p-8 rounded-xl">
-          <h4 class="font-heading text-lg mb-2">Tim Profesional</h4>
-          <p class="text-muted text-sm">Bekerja bersama tim yang kompeten dan berpengalaman.</p>
+        <div class="glass">
+          <h3>Tim Profesional</h3>
+          <p class="text-muted">Bekerja sama dengan tim yang kompeten dan berpengalaman.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="glass mt-16 py-8">
-    <div class="max-w-7xl mx-auto text-center px-4">
-      <p class="text-muted mb-2">&copy; 2026 PT. Kramat Hidro Mandiri. Semua hak dilindungi.</p>
-      <p class="text-sm">Email: info@kramathidromandiri.com | FB/IG: kramathidromandiri</p>
-    </div>
+  <footer class="glass">
+    <p>&copy; 2026 PT. Kramat Hidro Mandiri. Semua hak dilindungi.</p>
+    <p class="text-small">Email: info@kramathidromandiri.com | FB/IG: kramathidromandiri</p>
   </footer>
 
-  <script>
-    // Water simulation hero
-    const canvas = document.getElementById('hero-canvas');
-    
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resize);
-    resize();
-    
-    let time = 0;
-    function animate() {
-      const w = canvas.width, h = canvas.height;
-      const ctx = canvas.getContext('2d');
-      
-      const grad = ctx.createRadialGradient(w/2, h/2, 0, w/2, h/2, Math.max(w,h)/2);
-      grad.addColorStop(0, '#071325');
-      grad.addColorStop(1, '#1a2a4a');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, w, h);
-      
-      ctx.strokeStyle = 'rgba(56, 189, 248, 0.15)';
-      ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      for (let x = 0; x <= w; x += 5) {
-        const wave = Math.sin(x * 0.02 + time) * 20 + Math.cos(x * 0.01 + time * 0.5) * 10;
-        ctx.lineTo(x, h * 0.4 + wave);
-      }
-      ctx.stroke();
-      
-      time += 0.02;
-      requestAnimationFrame(animate);
-    }
-    animate();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

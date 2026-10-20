@@ -1,101 +1,65 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studi Kasus - PT Kramat Hidro Mandiri</title>
-  <meta name="description" content="PLTA Peusangan 88 MW: Tunneling NATM, penstock 3.2 MPa, TKDN 68.4%">
+  <title>Studi Kasus - PT. Kramat Hidro Mandiri</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            surface: '#071325',
-            primary: '#c9a84c',
-            muted: '#94a3b8',
-            tertiary: '#38bdf8',
-          },
-          fontFamily: {
-            heading: ['Playfair Display', 'serif'],
-            body: ['Plus Jakarta Sans', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    :root { --bg: #071325; --text: #d7e3fc; --muted: #94a3b8; }
-    .glass { background: rgba(26,42,74,0.55); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-surface text-text font-body min-h-screen">
-  <header class="sticky top-0 z-50 glass px-6 py-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-heading">PT Kramat Hidro Mandiri</h1>
-      <nav class="flex gap-6">
-        <a href="index.html" class="hover:text-primary transition">Beranda</a>
-        <a href="layanan.html" class="hover:text-primary transition">Layanan</a>
-        <a href="tentang.html" class="hover:text-primary transition">Tentang</a>
-        <a href="studi-kasus.html" class="text-primary transition">Studi Kasus</a>
-        <a href="kontak.html" class="hover:text-primary transition">Kontak</a>
-      </nav>
-      <a href="kontak.html" class="px-4 py-2 bg-primary text-surface rounded font-semibold">RFP Tender</a>
+<body>
+  <header>
+    <h1 class="font-heading">PT. Kramat Hidro Mandiri</h1>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="studi-kasus.html" class="active">Studi Kasus</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="widget" id="theme-widget">
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Dark Mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2v14.5a7.5 7.5 0 1 0 0-15z"/>
+        </svg>
+      </button>
+      <button id="font-decrease" aria-label="Decrease font size" title="A-">A-</button>
+      <span id="font-size-label">A</span>
+      <button id="font-increase" aria-label="Increase font size" title="A+">A+</button>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto py-16 px-4">
-    <h2 class="text-3xl md:text-4xl font-heading text-center mb-4">Studi Kasus Teknis: PLTA Peusangan 88 MW</h2>
-    <p class="text-muted text-center max-w-2xl mx-auto mb-12">
-      Dokumentasi proyek flagship dengan terowongan NATM, penstock 3.2 MPa, 
-      pencapaian TKDN 68.4%, dan rekor 4.2 juta jam kerja selamat.
-    </p>
-
-    <!-- Project Hero Specs -->
-    <div class="grid md:grid-cols-3 gap-6 mb-12">
-      <div class="glass p-6 rounded-xl">
-        <div class="text-sm text-muted mb-1">Kapasitas Terpasang</div>
-        <div class="text-3xl font-bold text-primary">88 MW</div>
-        <div class="text-xs text-muted mt-2">Turbin Francis Ganda</div>
+  <main>
+    <section>
+      <h2>Studi Kasus & Portofolio</h2>
+      <p class="text-muted" style="max-width: 600px; margin: 0 auto 3rem;">Beberapa proyek yang telah kami kerjakan dalam manufaktur turbin hidro dan instalasi mekanikal elektrikal.</p>
+      
+      <div class="grid">
+        <div class="glass">
+          <h3>Installation Services</h3>
+          <p>Instalasi Electrical Mechanical & Ereksi Turbin Hidro untuk berbagai kapasitas di berbagai lokasi.</p>
+        </div>
+        <div class="glass">
+          <h3>Manufacture Services</h3>
+          <p>Manufaktur Turbin Hidro — konsultasi & engineering penuh dari desain hingga delivery.</p>
+        </div>
+        <div class="glass">
+          <h3>General Machining</h3>
+          <p>General Machining & Manufacturing untuk kebutuhan industri umum dan komponen turbin.</p>
+        </div>
+        <div class="glass">
+          <h3>Tim Profesional</h3>
+          <p>Bekerja sama dengan tim yang kompeten dan berpengalaman di bidangnya masing-masing.</p>
+        </div>
       </div>
-      <div class="glass p-6 rounded-xl">
-        <div class="text-sm text-muted mb-1">Tekanan Penstock</div>
-        <div class="text-3xl font-bold text-tertiary">3.2 MPa</div>
-        <div class="text-xs text-muted mt-2">Baja kekuatan tinggi</div>
-      </div>
-      <div class="glass p-6 rounded-xl">
-        <div class="text-sm text-muted mb-1">Kandungan TKDN</div>
-        <div class="text-3xl font-bold text-primary">68.4%</div>
-        <div class="text-xs text-muted mt-2">Sertifikasi Kemenperin</div>
-      </div>
-    </div>
-
-    <!-- Details -->
-    <div class="space-y-8">
-      <div class="glass p-8 rounded-xl">
-        <h3 class="font-heading text-2xl mb-4">Metode Konstruksi Terowongan (NATM)</h3>
-        <p class="text-muted leading-relaxed mb-4">
-          Penerapan *New Austrian Tunnelling Method* (NATM) untuk penggalian terowongan air sepanjang 4.2 km 
-          di kontur geologi kompleks, memastikan kestabilan batuan secara real-time dengan monitoring inklinometer 
-          dan shotcrete bertulang serat baja.
-        </p>
-      </div>
-
-      <div class="glass p-8 rounded-xl">
-        <h3 class="font-heading text-2xl mb-4">Keselamatan Kerja &amp; SMK3 Emas</h3>
-        <p class="text-muted leading-relaxed">
-          Penyelesaian proyek tanpa satupun kecelakaan kerja berat, mencapai **4.2 juta jam kerja selamat** 
-          yang diverifikasi oleh auditor independen Kemenaker RI.
-        </p>
-      </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="glass py-6 mt-16">
-    <div class="max-w-7xl mx-auto text-center px-4">
-      <p class="text-muted">&copy; 2026 PT Kramat Hidro Mandiri. Semua hak dilindungi.</p>
-    </div>
+  <footer class="glass">
+    <p>&copy; 2026 PT. Kramat Hidro Mandiri. Semua hak dilindungi.</p>
+    <p style="font-size: 0.9rem;">Email: info@kramathidromandiri.com | FB/IG: kramathidromandiri</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
