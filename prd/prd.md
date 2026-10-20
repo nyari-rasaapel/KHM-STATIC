@@ -6,7 +6,7 @@
 - **Fitur Baru (Top-Right Widget):** 
   - Tombol **Mode Gelap / Terang** (Dark/Light Mode) dengan ikon SVG modern.
   - Tombol **Pengaturan Ukuran Font** (A-/A+) untuk aksesibilitas pembaca.
-- **Efek Navbar:** Navbar beralih menjadi melayang (*floating*) saat di-*scroll* ke bawah, **memendek menjadi 40% lebar** layar (terpusat horizontal, `margin: 0 auto`), posisi **50px dari margin atas browser**, dengan desain *glass* transparan 70% opacity + animasi `transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1)` untuk perpindahan halus.
+- **Efek Navbar:** Navbar beralih menjadi melayang (*floating*) saat di-*scroll* ke bawah, **memendek menjadi 50% lebar layar** (terpusat horizontal), **posisi tulisan PT. Kramat Hidro Mandiri pindah ke atas semua menu** yang ada di navbar (menggunakan layout fleksibel kolom saat floating), dengan animasi lebih lambat & *smooth* (`transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1)`), jarak `50px` dari atas browser, desain *glass* transparan 70% opacity + *border-radius* 14px.
 - **Kontak Diselaraskan:** 
   - Alamat lengkap: **Jalan Cihanjuang Rahayu No. 303A Parongpong, Bandung Barat 40559 JB, Indonesia** (berdasarkan koordinat Google Maps lama, Cigugur Girang/Parongpong, Bandung Barat).
   - Email: `info@kramathidromandiri.com`
