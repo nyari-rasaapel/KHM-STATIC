@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Kramat Hidro Mandiri - EPC Hidro & Listrik</title>
+  <meta name="description" content="Kontraktor EPC terkemuka 25+ tahun &gt;1200MW, Zero Fatalities (SMK3 Emas)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: '#071325',
+            'surface-container': '#142032',
+            'surface-container-high': '#1f2a3d',
+            primary: '#c9a84c',
+            muted: '#94a3b8',
+            on_primary: '#0a1628',
+            secondary: '#b7c6ee',
+            tertiary: '#38bdf8',
+            'tertiary-container': '#2eb7f2',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          backdropBlur: { sm: '12px', DEFAULT: '16px', lg: '24px' }
+        }
+      },
+      plugins: [],
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #071325;
+      --surface: #142032;
+      --text: #d7e3fc;
+      --muted: #94a3b8;
+      --border: rgba(255,255,255,0.1);
+    }
+    .glass { background: rgba(26,42,74,0.55); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
+    .glass-hover { background: rgba(26,42,74,0.75); border: 1px solid rgba(201,168,76,0.35); }
+  </style>
+</head>
+<body class="bg-surface text-text font-body min-h-screen">
+  <header class="sticky top-0 z-50 glass backdrop-blur-md px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-heading">PT Kramat Hidro Mandiri</h1>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="hover:text-primary transition">Beranda</a>
+        <a href="layanan.html" class="hover:text-primary transition">Layanan</a>
+        <a href="tentang.html" class="hover:text-primary transition">Tentang</a>
+        <a href="studi-kasus.html" class="hover:text-primary transition">Studi Kasus</a>
+        <a href="kontak.html" class="hover:text-primary transition">Kontak</a>
+      </nav>
+      <a href="#kontak" class="hidden md:inline-block px-4 py-2 bg-primary text-on-primary rounded font-semibold">RFP Tender</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto">
+    <!-- Hero Three.js -->
+    <section class="relative h-[60vh] md:h-[80vh] overflow-hidden">
+      <canvas id="hero-canvas" class="absolute inset-0 w-full h-full object-cover"></canvas>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        <h2 class="text-3xl md:text-5xl font-heading mb-4">EPC Hidro & Listrik Profesional</h2>
+        <p class="text-lg md:text-xl text-muted mb-8">Membangun masa depan energi hijau sejak 1999</p>
+        <a href="#kontak" class="px-8 py-3 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition">Mulai Proyek Anda</a>
+      </div>
+    </section>
+
+    <!-- KPI Overview -->
+    <section class="py-16 grid gap-10 md:grid-cols-5 text-center">
+      <div class="glass p-6 rounded-xl">
+        <div class="text-4xl font-bold text-primary mb-2" data-kpi>450 MW</div>
+        <div class="text-sm text-muted">Turbine Pilot</div>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <div class="text-4xl font-bold text-tertiary mb-2" data-kpi>140+</div>
+        <div class="text-sm text-muted">Proyek Strategis</div>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <div class="text-4xl font-bold text-primary mb-2" data-kpi>25+</div>
+        <div class="text-sm text-muted">Tahun Layanan</div>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <div class="text-4xl font-bold text-tertiary mb-2" data-kpi>0</div>
+        <div class="text-sm text-muted">Kanitasan Kecelakaan</div>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <div class="text-4xl font-bold text-primary mb-2" data-kpi>99.8%</div>
+        <div class="text-sm text-muted">Tingkat Uptime</div>
+      </div>
+    </section>
+
+    <!-- Pilar EPC -->
+    <section class="py-16">
+      <h3 class="text-3xl font-heading text-center mb-12">Pilar Pengembangan Kami</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-xl text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-primary">E</span>
+          </div>
+          <h4 class="font-heading mb-2">Engineering</h4>
+          <p class="text-muted text-sm">Desain hidrodinamika precisi, simulasi CFD, dan optimasi turbin Francis</p>
+        </div>
+        <div class="glass p-8 rounded-xl text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-primary">P</span>
+          </div>
+          <h4 class="font-heading mb-2">Procurement</h4>
+          <p class="text-muted text-sm">Jaringan vendor ISO, kepatuhan TKDN 68.4%, dan kontrol kualitas TBM</p>
+        </div>
+        <div class="glass p-8 rounded-xl text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-primary">C</span>
+          </div>
+          <h4 class="font-heading mb-2">Construction</h4>
+          <p class="text-muted text-sm">Pelaksanan proyek dengan standar internasional dan tim ahli 200+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio PSN -->
+    <section class="py-16 glass mb-16">
+      <div class="p-8">
+        <h3 class="text-2xl font-heading mb-6">Portofolio Proyek Strategis Nasional</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border-l-4 border-primary pl-4">
+            <h4 class="font-heading mb-1">PLTA Peusangan 88 MW</h4>
+            <p class="text-sm text-muted">Penstock 3.2 MPa, TKDN 68.4%, 4.2 juta jam kerja selamat</p>
+          </div>
+          <div class="border-l-4 border-primary pl-4">
+            <h4 class="font-heading mb-1">Gardu Induk 500 kV Kendal</h4>
+            <p class="text-sm text-muted">Transmisi tenaga terbesar Jawa Tengah, integrasi sistem 3 provinsi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="glass mt-16 py-8">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <p class="text-muted mb-2">&copy; 2026 PT Kramat Hidro Mandiri. Semua hak dilindungi.</p>
+      <p class="text-sm">Jl. Raya Kramat, Kendal 50261, Indonesia</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple Three.js water simulation hero
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+    
+    let time = 0;
+    function animate() {
+      const w = canvas.width, h = canvas.height;
+      const ctx = canvas.getContext('2d');
+      
+      // Navy background with subtle radial glow
+      const grad = ctx.createRadialGradient(w/2, h/2, 0, w/2, h/2, Math.max(w,h)/2);
+      grad.addColorStop(0, '#071325');
+      grad.addColorStop(1, '#1a2a4a');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, h);
+      
+      // Water surface waves
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.15)';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      for (let x = 0; x <= w; x += 5) {
+        const wave = Math.sin(x * 0.02 + time) * 20 + Math.cos(x * 0.01 + time * 0.5) * 10;
+        ctx.lineTo(x, h * 0.4 + wave);
+      }
+      ctx.stroke();
+      
+      time += 0.02;
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan - PT Kramat Hidro Mandiri</title>
+  <meta name="description" content="PLTA Turnkey, Transmisi GIS/AIS 150-500 kV, O&M, NDT & Hydrostatic Testing">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: '#071325',
+            primary: '#c9a84c',
+            muted: '#94a3b8',
+            tertiary: '#38bdf8',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --bg: #071325; --surface: #142032; --text: #d7e3fc; --muted: #94a3b8; --border: rgba(255,255,255,0.1); }
+    .glass { background: rgba(26,42,74,0.55); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
+  </style>
+</head>
+<body class="bg-surface text-text font-body min-h-screen">
+  <header class="sticky top-0 z-50 glass px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-heading">PT Kramat Hidro Mandiri</h1>
+      <nav class="flex gap-6">
+        <a href="index.html" class="hover:text-primary transition">Beranda</a>
+        <a href="layanan.html" class="text-primary transition">Layanan</a>
+        <a href="tentang.html" class="hover:text-primary transition">Tentang</a>
+        <a href="studi-kasus.html" class="hover:text-primary transition">Studi Kasus</a>
+        <a href="kontak.html" class="hover:text-primary transition">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto py-16 px-4">
+    <h2 class="text-3xl md:text-4xl font-heading text-center mb-4">Layanan &amp; Solusi Rekayasa</h2>
+    <p class="text-muted text-center max-w-2xl mx-auto mb-12">
+      Spesialisasi teknis kami mencakup pengembangan energi terbarukan, 
+      infrastruktur transmisi, dan layanan operasi pemeliharaan lanjutan.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- PLTA -->
+      <div class="glass p-8 rounded-xl">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl text-tertiary">💧</div>
+          <div>
+            <h3 class="font-heading text-xl mb-2">PLTA Turnkey</h3>
+            <p class="text-muted text-sm mb-3">
+              Pengembangan PLTA skala kecil hingga menengah dengan sistem terpadu, 
+              termasuk studi terowongan NATM, desain penstock, dan pengaturan turbin Francis/Pelton.
+            </p>
+            <ul class="text-sm list-disc list-inside text-sm text-muted">
+              <li>Efisiensi turbin &gt;94%</li>
+              <li>Simulasi aliran dan CFD</li>
+              <li>Sistem kontrol SCADA otomatis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transmisi -->
+      <div class="glass p-8 rounded-xl">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl text-tertiary">⚡</div>
+          <div>
+            <h3 class="font-heading text-xl mb-2">Transmisi &amp; Gardu Induk</h3>
+            <p class="text-muted text-sm mb-3">
+              Sistem transmisi GIS/AIS dari 150 kV hingga 500 kV dengan desain tegangan tinggi, 
+              terminasi kabel, dan integrasi jaringan sistem tenaga.
+            </p>
+            <ul class="text-sm list-disc list-inside text-muted">
+              <li>Gardu Induk 500 kV Kendal</li>
+              <li>Penguatan jaringan 3 provinsi</li>
+              <li>Sistem pemantauan jarak jauh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- O&M -->
+      <div class="glass p-8 rounded-xl">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl text-tertiary">🔧</div>
+          <div>
+            <h3 class="font-heading text-xl mb-2">Operasi &amp; Pemeliharaan</h3>
+            <p class="text-muted text-sm mb-3">
+              Dukungan O&M penuh dengan telemetri darurat, hotline 24/7 
+              `0800-1-HIDRO` (<2 jam respons), serta layanan overhaul rutin.
+            </p>
+            <ul class="text-sm list-disc list-inside text-muted">
+              <li>Respons darurat &lt;2 jam</li>
+              <li>Monitoring DGA & kavitasi turbin</li>
+              <li>Jadwal overhaul terprediksi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- NDT -->
+      <div class="glass p-8 rounded-xl">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl text-tertiary">🔍</div>
+          <div>
+            <h3 class="font-heading text-xl mb-2">NDT &amp; Uji Hidrastatis</h3>
+            <p class="text-muted text-sm mb-3">
+              Pengujian tidak-reaktif (Radiografi, Ultrasonik, Magnetik) 
+              dan uji hidrostatis balai fabrikasi untuk integritas struktural maksimal.
+            </p>
+            <ul class="text-sm list-disc list-inside text-muted">
+              <li>RT, UT, MT, PT</li>
+              <li>Uji hidrostatis tekanan tinggi</li>
+              <li>Laporan sertifikasi penuh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="glass py-6 mt-16">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <p class="text-muted">&copy; 2026 PT Kramat Hidro Mandiri. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>
