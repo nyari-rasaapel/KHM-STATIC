@@ -48,6 +48,7 @@ header {
   border-bottom: 1px solid var(--border);
   background: rgba(26, 42, 74, 0.6);
   backdrop-filter: blur(16px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header h1 {
@@ -59,8 +60,11 @@ header h1 {
 
 /* Floating state after scrolling down */
 header.floating {
-  top: 2px;
-  margin: 0 12px;
+  top: 50px;
+  width: 40%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
   border: 1px solid var(--border);
   border-radius: 14px;
   background: rgba(26, 42, 74, 0.7);
@@ -121,8 +125,11 @@ header.floating {
 }
 
 .widget span#font-size-label {
-  font-size: 0.9rem;
-  padding: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 0.25rem;
+  min-width: 20px;
+  text-align: center;
   white-space: nowrap;
 }
 

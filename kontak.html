@@ -18,14 +18,16 @@
       <a href="kontak.html" class="active">Kontak</a>
     </nav>
     <div class="widget" id="theme-widget">
-      <button id="theme-toggle" aria-label="Toggle dark mode" title="Dark Mode">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2v14.5a7.5 7.5 0 1 0 0-15z"/>
-        </svg>
+      <button id="theme-toggle" aria-label="Aktifkan mode terang" title="Mode Gelap">
+        <svg viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm7.5-11.5a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1zm0 11a1 1 0 0 1 1 1v1.5a1 1 0 0 1-2 0V16a1 1 0 0 1 1-1zm-3.9-8.6a1 1 0 0 1 1.4 0l1 1a1 1 0 1 1-1.4 1.4l-1-1a1 1 0 0 1 0-1.4zm7.4 11.6a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4-1.4l1-1a1 1 0 0 1 1.4 0zM4 12a1 1 0 0 1-1 1H1.5a1 1 0 0 1 0-2H3a1 1 0 0 1 1 1zm18 0a1 1 0 0 1-1 1h-1.5a1 1 0 0 1 0-2H21a1 1 0 0 1 1 1zM5.6 5.6a1 1 0 0 1 1.4 0l1 1a1 1 0 0 1-1.4 1.4l-1-1a1 1 0 0 1 0-1.4zm11.4 11.4a1 1 0 0 1 1.4 0l1 1a1 1 0 0 1-1.4 1.4l-1-1a1 1 0 0 1 0-1.4zM18.4 5.6a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4-1.4l1-1a1 1 0 0 1 1.4 0zM7 17a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4-1.4l1-1a1 1 0 0 1 1.4 0z"/></svg>
       </button>
-      <button id="font-decrease" aria-label="Decrease font size" title="A-">A-</button>
+      <button id="font-decrease" aria-label="Perkecil font" title="A-">
+        <svg viewBox="0 0 24 24"><path d="M3 13h2v7H3v-7zm4-8h2v4H7V5zm4 12h2v2h-2v-2zm4-16v2h16V3h-2zm0 4h2v12h-2V7zm4 8h2v2h-2v-2zm-8 2v2h2v-2H7v-2zm0 4h2v4H7v-4zm4-8h2v2h-2V5zm4 12h2v2h-2v-2z"/></svg>
+      </button>
       <span id="font-size-label">A</span>
-      <button id="font-increase" aria-label="Increase font size" title="A+">A+</button>
+      <button id="font-increase" aria-label="Perbesar font" title="A+">
+        <svg viewBox="0 0 24 24"><path d="M3 7h2v7H3V7zm4 4h2v7h-2v-7zm4-8h2v4H7V5zm4 8h2v2h-2v-2zm0-16v2h16V3h-2zm0 4h2v12h-2V7zm4 4h2v2h-2v-2zm4-8h2v2h-2V5zm4 8h2v2h-2v-2z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -36,11 +38,13 @@
       
       <div class="grid">
         <div class="glass">
-          <h3 style="text-align: left; margin-bottom: 1rem;">Kontak Cepat</h3>
+          <h3 style="text-align: left; margin-bottom: 1rem;">Kantor Pusat & Balai Fabrikasi</h3>
+          <p style="text-align: left; margin-bottom: 0.75rem;"><strong>Alamat:</strong> Jalan Cihanjuang Rahayu No. 303A Parongpong, Bandung Barat 40559 JB, Indonesia.</p>
+          <p style="text-align: left; margin-bottom: 0.75rem;"><strong>Telepon:</strong> <a href="tel:+62226648089" style="color: var(--primary);">+62 22 664 8089</a></p>
           <p style="text-align: left; margin-bottom: 0.75rem;"><strong>Email:</strong> <a href="mailto:info@kramathidromandiri.com" style="color: var(--primary);">info@kramathidromandiri.com</a></p>
           <p style="text-align: left; margin-bottom: 0.75rem;"><strong>Instagram:</strong> <a href="https://www.instagram.com/kramathidromandiri/" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">@kramathidromandiri</a></p>
           <p style="text-align: left; margin-bottom: 0.75rem;"><strong>Facebook:</strong> <a href="https://www.facebook.com/kramathidromandiri/" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">kramathidromandiri</a></p>
-          <p style="text-align: left;"><strong>Google:</strong> <a href="http://g.page/KRAMATHIDROMANDIRI" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">Profil Bisnis</a></p>
+          <p style="text-align: left;"><strong>Google Maps:</strong> <a href="http://g.page/KRAMATHIDROMANDIRI" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">Profil Bisnis</a></p>
         </div>
 
         <div class="glass">
@@ -52,7 +56,7 @@
             <input type="email" id="email" name="email" required autocomplete="email">
             <label for="message">Pesan</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit" class="cta" style="border: none; cursor: pointer;">Kirim Pesan</button>
+            <button type="submit" class="btn-primary" style="border: none; cursor: pointer;">Kirim Pesan</button>
           </form>
           <p id="form-status" role="status" aria-live="polite" style="margin-top: 1rem; font-size: 0.9rem;"></p>
         </div>
@@ -62,7 +66,7 @@
 
   <footer class="glass">
     <p>&copy; 2026 PT. Kramat Hidro Mandiri. Semua hak dilindungi.</p>
-    <p style="font-size: 0.9rem;">Email: info@kramathidromandiri.com | FB/IG: kramathidromandiri</p>
+    <p class="text-small">Alamat: Kawasan Industri Kendal, Jl. Arteri No. 88, Kendal 50261 | Telp: 0800-1-HIDRO | Email: info@kramathidromandiri.com</p>
   </footer>
 
   <script src="script.js"></script>

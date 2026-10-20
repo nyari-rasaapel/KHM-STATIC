@@ -6,6 +6,7 @@
 - **Fitur Baru (Top-Right Widget):** 
   - Tombol **Mode Gelap / Terang** (Dark/Light Mode) dengan ikon SVG modern.
   - Tombol **Pengaturan Ukuran Font** (A-/A+) untuk aksesibilitas pembaca.
+- **Efek Navbar:** Navbar beralih menjadi melayang (*floating*) saat di-*scroll* ke bawah, berjarak 2px dari atas, dengan desain *glass* transparan (70% *opacity*).
 
 ## 2. Palet Warna & Desain (Hydro-Engineering Prestige)
 - **Background Utama (Dark):** `#071325` (Deep Abyssal Navy)
