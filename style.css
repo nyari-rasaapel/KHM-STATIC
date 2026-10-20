@@ -57,6 +57,16 @@ header h1 {
   letter-spacing: -0.01em;
 }
 
+/* Floating state after scrolling down */
+header.floating {
+  top: 2px;
+  margin: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(26, 42, 74, 0.7);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
 /* Navigation */
 .nav-links {
   display: flex;

@@ -1,3 +1,13 @@
+// ===== Navbar floating effect =====
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    header.classList.add('floating');
+  } else {
+    header.classList.remove('floating');
+  }
+});
+
 // ===== Theme (dark / light) =====
 const htmlEl = document.documentElement;
 const themeToggle = document.getElementById('theme-toggle');
