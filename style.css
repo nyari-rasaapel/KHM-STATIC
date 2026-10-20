@@ -95,18 +95,37 @@ header.floating {
   margin: 0 auto;
   flex-direction: column;
   align-items: stretch;
-  gap: 0.25rem;
+  justify-content: center;
+  gap: 0.35rem;
   padding: 0.6rem 1.5rem;
   border: 1px solid var(--border);
   border-radius: 14px;
   background: rgba(26, 42, 74, 0.7);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-/* Floating: h1 moves above the menu row */
+/* Floating: h1 moves above menu, ALL-CAPS, larger */
 header.floating h1 {
-  font-size: 0.95rem;
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   order: -1;
+}
+
+/* Floating: hide font-size widget + theme toggle */
+header.floating .widget {
+  display: none;
+}
+
+/* Floating: menu centered */
+header.floating .header-row {
+  justify-content: center;
+}
+
+header.floating .nav-links {
+  justify-content: center;
+  width: 100%;
 }
 
 /* Navigation */
