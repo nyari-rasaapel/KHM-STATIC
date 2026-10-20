@@ -6,7 +6,15 @@
 - **Fitur Baru (Top-Right Widget):** 
   - Tombol **Mode Gelap / Terang** (Dark/Light Mode) dengan ikon SVG modern.
   - Tombol **Pengaturan Ukuran Font** (A-/A+) untuk aksesibilitas pembaca.
-- **Efek Navbar:** Navbar beralih menjadi melayang (*floating*) saat di-*scroll* ke bawah, berjarak 2px dari atas, dengan desain *glass* transparan (70% *opacity*).
+- **Efek Navbar:** Navbar beralih menjadi melayang (*floating*) saat di-*scroll* ke bawah, **memendek menjadi 40% lebar** layar (terpusat horizontal, `margin: 0 auto`), posisi **50px dari margin atas browser**, dengan desain *glass* transparan 70% opacity + animasi `transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1)` untuk perpindahan halus.
+- **Kontak Diselaraskan:** 
+  - Alamat lengkap: **Jalan Cihanjuang Rahayu No. 303A Parongpong, Bandung Barat 40559 JB, Indonesia** (berdasarkan koordinat Google Maps lama, Cigugur Girang/Parongpong, Bandung Barat).
+  - Email: `info@kramathidromandiri.com`
+  - Telepon: `+62 22 664 8089`
+  - WhatsApp lama via `https://bit.ly/3hjLYXt` → `+62 812 2157 3499` (dipertahankan di kontak karena nomor WA terpisah; namun nomor telp kantor utama dipakai `+62 22 664 8089`).
+  - Sosial: Instagram [@kramathidromandiri](https://www.instagram.com/kramathidromandiri/), Facebook [kramathidromandiri](https://www.facebook.com/kramathidromandiri/), Google [g.page/KRAMATHIDROMANDIRI](http://g.page/KRAMATHIDROMANDIRI).
+- **SEO & Semantic:** Semua halaman dilengkapi `<meta>` deskripsi/kata kunci, canonical, Open Graph, Twitter Card, dan JSON-LD (`Organization` di index, `LocalBusiness`+geo di kontak). Struktur semantik ditambah `<main id="main">`, `<section aria-labelledby>`, `<address>`, `aria-current="page"`, `aria-label="Navigasi utama"`, `<a class="skip-link">`, `aria-describedby`/`aria-live` pada form.
+- **Cleanup:** Footer semua halaman konsisten — alamat baru + telp + email. `tentang.html` profil perusahaan berisi bidang usaha + lokasi akurat.
 
 ## 2. Palet Warna & Desain (Hydro-Engineering Prestige)
 - **Background Utama (Dark):** `#071325` (Deep Abyssal Navy)
