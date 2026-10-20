@@ -107,7 +107,7 @@ header.floating {
 
 /* Floating: h1 moves above menu, ALL-CAPS, larger */
 header.floating h1 {
-  font-size: 1.45rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.55rem);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   order: -1;
@@ -406,6 +406,15 @@ form .btn-primary {
   .widget {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Floating adjustments for mobile */
+  header.floating {
+    width: 85%;
+    top: 24px;
+  }
+  header.floating h1 {
+    font-size: clamp(1.1rem, 3.5vw, 1.45rem);
   }
   
   section h2, .section-title {
